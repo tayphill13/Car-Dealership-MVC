@@ -10,8 +10,8 @@ namespace CarDealership.Controllers
     public ActionResult Index()
     {
       List<Car> AllCars = Car.GetAll();
-      List<Car> CarsWithinPrice = Car.WorthBuying(MaxPrice);
-      return View(AllCars, CarsWithinPrice);
+      List<Car> CarsWithinPrice = Car.WorthBuying();
+      return View(AllCars);
     }
 
     [HttpGet("/cars/addCar")]

@@ -26,13 +26,13 @@ namespace CarDealership.Models
       _instances.Add(this);
     }
 
-    public List<Car> WorthBuying(int MaxPrice)
+    public static List<Car> WorthBuying(int MaxPrice)
     {
       foreach (Car y in _instances)
       {
         if (y.Price < MaxPrice)
         {
-          _carsMatchingPrice.Add(this);
+          _carsMatchingPrice.Add(y);
         }
       }
       return _carsMatchingPrice;
