@@ -12,6 +12,8 @@ namespace CarDealership.Models
     
     private static List<Car> _instances = new List<Car>{};
 
+    private static List<Car> _carsMatchingPrice = new List<Car>{};
+
     public static string MakeSound(string sound)
     {
       return "Our cars sound like " + sound;
@@ -24,12 +26,16 @@ namespace CarDealership.Models
       _instances.Add(this);
     }
 
-    public 
-
-    public bool WorthBuying(int maxPrice)
+    public List<Car> WorthBuying(int MaxPrice)
     {
-      MaxPrice = maxPrice;
-      return (Price < maxPrice);
+      foreach (Car y in _instances)
+      {
+        if (y.Price < MaxPrice)
+        {
+          _carsMatchingPrice.Add(this);
+        }
+      }
+      return _carsMatchingPrice;
     }
     public static List<Car> GetAll()
     {
