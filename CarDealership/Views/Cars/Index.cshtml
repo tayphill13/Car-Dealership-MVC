@@ -6,10 +6,10 @@
   <p>There are no Cars in the list.</p>
 }
 <ul>
-  @foreach (Car car in Model)
+  @foreach (Car x in Model)
   {
-  <li>@car.MakeModel</li>
-  }
+  <li>@x.MakeModel</li>
+  }   
 </ul>
 
-<a href="/cars/new">Add a new car.</a>
+<a href="/">Back to home</a>
