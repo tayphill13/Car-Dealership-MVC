@@ -6,7 +6,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is an MVC C# application that simulates a car buyer's experience.  The User can choose to see a list of all cars in the lot, and can search within the lot by inputting the max price they want to pay.  The User can also add cars to the lot._
 
 ## Specifications
 
@@ -39,7 +39,7 @@ Running the program:
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Not a bug, but the car lot initially will be empty and cars have to be added first._
 
 ## Support and contact details
 
