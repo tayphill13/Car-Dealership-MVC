@@ -12,8 +12,11 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
-| User will be able to enter max price:   |     |     |
+| User is first landed on a homepage and can choose from 3 options  |   |     |
+| If User chooses to search for a car then they can enter the max price for a car   |   |     |
 | User will then be able to see a grouping of cars that meet the max price criteria   |   |   |
+| If User selects to see the lot inventory, then they will be taken to a page that lists all cars in the lot  |   |       |
+| If no cars are in the inventory lot then a User can add cars to the lot with values of Make/Price/Miles |   |     |
 
 
 ## Setup/Installation Requirements
