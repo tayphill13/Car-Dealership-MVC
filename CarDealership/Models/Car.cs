@@ -24,6 +24,8 @@ namespace CarDealership.Models
       _instances.Add(this);
     }
 
+    public 
+
     public bool WorthBuying(int maxPrice)
     {
       MaxPrice = maxPrice;
