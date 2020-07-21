@@ -12,4 +12,15 @@
   }   
 </ul>
 
+<h1>These cars match your price range</h1>
+<ul>
+  @foreach (Car x in Model)
+  {
+    @if (x.WorthBuying(maxPrice))
+    {
+    <li>@x.MakeModel</li>
+    }
+  }
+</ul>
+
 <a href="/">Back to home</a>

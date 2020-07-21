@@ -33,9 +33,8 @@ namespace CarDealership.Controllers
     }
 
     [HttpPost("/cars/price")]
-    public ActionResult Create(string makeModel, int price, int miles)
+    public ActionResult WorthBuying(int maxPrice)
     {
-      Car myCar = new Car(makeModel, price, miles);
       return RedirectToAction("Index");
     }
 

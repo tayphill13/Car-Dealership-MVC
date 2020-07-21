@@ -8,6 +8,7 @@ namespace CarDealership.Models
     public string MakeModel { get; set; }
     public int Price { get; set; }
     public int Miles  { get; set; }
+    public int MaxPrice { get; set; }
     
     private static List<Car> _instances = new List<Car>{};
 
@@ -25,6 +26,7 @@ namespace CarDealership.Models
 
     public bool WorthBuying(int maxPrice)
     {
+      MaxPrice = maxPrice;
       return (Price < maxPrice);
     }
     public static List<Car> GetAll()
