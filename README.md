@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _CarDealership MVC_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _CarDealership application in MVC format, 7.21.20_
 
-#### By _**Your Name Here**_
+#### By _**Taylor Phillips and Jason Khan**_
 
 ## Description
 
@@ -12,6 +12,8 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 | Spec | Input | Output |
 | :--- | :---: | ---: |
+| User will be able to enter max price:   |     |     |
+| User will then be able to see a grouping of cars that meet the max price criteria   |   |   |
 
 
 ## Setup/Installation Requirements
@@ -47,7 +49,7 @@ _Please reach out through my GitHub account._
 
 ### License
 
-Copyright (c) 2020 **_Your Name Here_**
+Copyright (c) 2020 **_Jason Khan and Taylor Phillips_**
 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

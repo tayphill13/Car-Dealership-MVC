@@ -1,27 +1,35 @@
+using System;
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace CarDealership.Models
 {
-  public class Item
+  public class Car
   {
-    public string Description { get; set; }
-    private static List<Item> _instances = new List<Item> { };
+    public string MakeModel { get; set; }
+    public int Price { get; set; }
+    public int Miles  { get; set; }
+    
+    private static List<Car> _instances = new List<Car>{};
 
-    public Item(string description)
+    public static string MakeSound(string sound)
     {
-      Description = description;
+      return "Our cars sound like " + sound;
+    }
+    public Car(string makeModel, int price, int miles)
+    {
+      MakeModel = makeModel;
+      Price = price;
+      Miles = miles;
       _instances.Add(this);
     }
 
-    public static List<Item> GetAll()
+    public bool WorthBuying(int maxPrice)
+    {
+      return (Price < maxPrice);
+    }
+    public static List<Car> GetAll()
     {
       return _instances;
     }
-
-    public static void ClearAll()
-    {
-      _instances.Clear();
-    }
-
   }
 }

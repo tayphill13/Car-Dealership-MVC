@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using CarDealership.Models;
 
-namespace ProjectName.Tests
+namespace CarDealership.Tests
 {
   [TestClass]
   public class ClassNameTests

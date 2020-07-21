@@ -1,28 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using CarDealership.Models;
 using System.Collections.Generic;
 
-namespace ToDoList.Controllers
+namespace CarDealership.Controllers
 {
-  public class ItemsController : Controller
+  public class CarsController : Controller
   {
-    [HttpGet("/items")]
+    [HttpGet("/cars")]
     public ActionResult Index()
     {
-      List<Item> allItems = Item.GetAll();
-      return View(allItems);
+      List<Car> AllCars = Car.GetAll();
+      return View(AllCars);
     }
 
-    [HttpGet("/items/new")]
+    [HttpGet("/cars/addCar")]
     public ActionResult CreateForm()
     {
       return View();
     }
 
-    [HttpPost("/items")]
-    public ActionResult Create(string description)
+    [HttpPost("/cars")]
+    public ActionResult Create(string makeModel, int price, int miles)
     {
-      Item myItem = new Item(description);
+      Car myCar = new Car(makeModel, price, miles);
       return RedirectToAction("Index");
     }
 
